@@ -9,9 +9,10 @@ RUN apk update \
         musl-dev \
         libffi-dev \
         openssl-dev \
+        bash \
     && rm -rf /var/cache/apk/*
 
 RUN pip install ansible
 
-RUN pip install  docker-py
+RUN pip install docker-py
 
