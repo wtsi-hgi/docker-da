@@ -12,7 +12,9 @@ RUN apk update \
         bash \
     && rm -rf /var/cache/apk/*
 
-RUN pip install ansible
+RUN pip install \
+    ansible \
+    docker-py \
+    molecule
 
-RUN pip install docker-py
 
