@@ -10,6 +10,7 @@ RUN apk update \
         libffi-dev \
         openssl-dev \
         bash \
+        git \
     && rm -rf /var/cache/apk/*
 
 RUN pip install \
